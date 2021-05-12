@@ -149,6 +149,7 @@ int main(){
 	// while loop, the function will loop until the final __loop_count is equals to __loop_counter
 	while (__loop_counter <= __loop_count)
 	{
+		std::cout << "(" << __loop_counter << ")" << endl;
 		// void function
 		standingAve();
 		// increment loop

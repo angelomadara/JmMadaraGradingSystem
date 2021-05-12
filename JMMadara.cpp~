@@ -12,7 +12,6 @@ void standingAve(){
 	std::cout << "Enter student name: ";
 	cin.ignore();
 	getline(cin,student_name,'\n');
-	// std::cin >> student_name;
 	std::cout << "Enter student number: ";
 	std::cin >> student_number;
 	
@@ -146,11 +145,15 @@ int main(){
 	std::cout << "Enter the number of students : ";
 	std::cin >> __loop_count;
 	
+	std::cout << endl << "+----------------------------------------------------------+" << endl << endl;
+	// while loop, the function will loop until the final __loop_count is equals to __loop_counter
 	while (__loop_counter <= __loop_count)
 	{
+		std::cout << "(" << __loop_counter << ")" << endl;
 		// void function
 		standingAve();
-		++__loop_counter;
+		// increment loop
+		++__loop_counter; 
 		std::cout << endl << "+----------------------------------------------------------+" << endl << endl;
 	}
 	
